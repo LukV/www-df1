@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataframe One (df1)</title>
+    <style>
+        /* Full-page styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        /* Gradient animation styling */
+        .gradient {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1.4em;
+            background: linear-gradient(45deg, rgb(112, 240, 252), rgb(117, 252, 201),
+                rgb(225, 245, 92), rgb(245,190,70), rgb(235,60,217), rgb(180,45,245));
+            background-size: 400% 400%;
+            animation: gradient-bg 25s ease infinite;
+        }
+
+        @keyframes gradient-bg {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .logo {
+            width: 200px; /* Adjust the size as needed */
+            height: auto;
+        }
+
+        /* Centered box styling */
+        .center-box {
+            max-width: 350px;
+            padding: 40px 20px;
+            font-family: "Times New Roman", Times, serif;
+            text-align: center;
+        }
+
+        /* Traditional blue link */
+        a {
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient">
+        <img src="logo.png" alt="Logo" class="logo">
+        <div class="center-box">
+            <p>My name is Luk Verhelst. 
+                My company is called <strong>Dataframe One (df1)</strong>. 
+                Because I make dataframes for a living. 
+                If you need <span style="font-size:130%; font-weight: bold;">data engineering</span> craft, then find me on 
+                <a href="https://www.linkedin.com/in/lukverhelst/">LinkedIn</a>
+                because I love to help out.</p>
+        </div>
+    </div>
+</body>
+</html>
